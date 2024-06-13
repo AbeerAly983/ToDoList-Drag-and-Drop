@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List | Drag & Drop</title>
+    <!-- fontAwsome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="container">
+        <div class="container-data rounded rounded-4">
+          <h1 class="text-capitalize p-2 text-center mt-4 mb-5">
+            To Do List | Drag & Drop
+          </h1>
+          <form
+            class="row g-3 justify-content-center align-items-center mb-4"
+            id="add-form">
+            <div class="col-md-4">
+              <input
+                type="text"
+                class="form-control"
+                id="add-task"
+                placeholder="Add Task..." />
+              <div class="alert alert-danger mt-1 py-2 px-3 d-none">
+                <small>This Field is Required...</small>
+              </div>
+            </div>
+            <div class="col-auto">
+              <button id="add-button" type="submit">Add Task</button>
+            </div>
+          </form>
+
+          <div class="container mt-5 mb-5">
+            <div class="row m-auto">
+              <div class="col-md-4">
+                <div class="inner-list" id="to-do-list">
+                  <h3 class="text-capitalize to-do">To Do Tasks</h3>
+                  <div class="list" id="to-do"></div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="inner-list" id="doing-list">
+                  <h3 class="text-capitalize doing">Doing tasks</h3>
+                  <div class="list" id="doing"></div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="inner-list" id="done-list">
+                  <h3 class="text-capitalize done">Done tasks</h3>
+                  <div class="list" id="done"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
