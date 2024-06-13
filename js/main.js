@@ -65,12 +65,13 @@ function display(arr, parent) {
       updateLocalStorage();
     });
 
-    let trashIcon = task.querySelector(".float-end");
-    trashIcon.addEventListener("click", function () {
-      arr.splice(i, 1);
-      display(arr, parent);
-      updateLists();
-      updateLocalStorage();
+    task.addEventListener("click", function (e) {
+      if (e.target.classList.contains("fa-trash-alt")) {
+        let parentTask = e.target.closest(".task");
+        parentTask.remove();
+        updateLists();
+        updateLocalStorage();
+      }
     });
 
     parent.appendChild(task);

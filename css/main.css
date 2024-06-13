@@ -88,6 +88,7 @@ h3 {
 }
 i {
   color: rgb(239, 36, 36);
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .parent {
